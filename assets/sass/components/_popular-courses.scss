@@ -1,0 +1,36 @@
+.popular-courses {
+    padding: 53px 0 52px;
+
+    .tab-nav {
+	    margin-bottom: 45px;
+    }
+
+	.course {
+		.img {
+			height: 120px;
+		} 
+	}
+
+	.show-more-link {
+		margin-top: 28px;
+	}
+
+	@media(max-width: 767px){
+	    padding: 35px 0 38px;
+	    
+	    .tab-nav {
+		    margin-bottom: 20px;
+    		display: inline-block;
+	    }
+
+		.course {
+			.img {
+				height: 140px;
+			} 
+		}
+
+		.show-more-link {
+		    margin-top: 10px;
+		}
+	}
+}

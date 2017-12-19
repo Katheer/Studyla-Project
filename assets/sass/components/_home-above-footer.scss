@@ -1,0 +1,132 @@
+.home-above-footer {
+	padding: 61px 0 19px;
+	background-image: linear-gradient(-45deg, #280082 0%, #0064dc 54%, #00fadc 100%);
+
+	* {
+		color: $custom-color-1;
+	}
+	.top {
+	    margin-bottom: 16px;
+	}
+
+	.left,
+	.right {
+		text-align: left;
+	}
+
+	.right {
+		h2, h3, h4, h5 {
+			font-family : $text-font-stack;
+		}
+
+		.sub-heading {
+			margin: 15px 0 0;
+			text-align: left;
+			* {
+				margin: 0 -3px 36px 0;
+			}
+		}
+
+		.heading-content {
+		    padding-right: 9px;
+	        margin-bottom: 40px;
+			h4 {
+			    margin-bottom: 12px;
+				line-height: 20px;
+				font-size: 20px;
+				font-weight: 500;
+			}
+			p {					
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+			    letter-spacing: 0.25px;
+			}
+		}
+
+		.sub-heading-content {
+			display: table;
+			[class*="col-"] {
+			    float: none;
+		        padding-bottom: 21px;
+			    display: table-cell;
+			    vertical-align: top;
+
+			    h5 {
+					line-height: 16px;
+					font-size: 16px;
+					font-weight: 600;
+				    margin-bottom: 5px;
+			    }
+
+			    p {
+		    	    margin-bottom: 10px;
+			    	font-size: 14px;
+					font-weight: 400;
+					line-height: 20px;
+				    letter-spacing: 0.25px;
+			    }
+			    &:last-child {
+		    	    padding-left: 27px;
+			    }
+			}
+		}
+
+		.button-blue {
+			max-width: 140px;
+			margin-top: 9px;
+		}
+	}
+
+	@media(min-width: 768px) and (max-width: 992px){
+		padding: 61px 0;
+	}
+
+	@media(max-width: 767px){
+		padding: 35px 0 40px;
+		
+		.top { margin-bottom: 0; }
+
+		.left,
+		.right { text-align: center; }
+
+		.left {
+			margin-bottom: 0;
+			img {
+				max-width: 280px;
+				margin: 0 auto;
+			}
+		}
+
+		.right {
+			.sub-heading {
+				margin: 0;
+				text-align: center;
+				* {
+					margin: 0 0 15px;
+				}
+			}
+
+			.heading-content {
+			    padding-right: 0;
+		        margin-bottom: 20px;
+			}
+
+			.sub-heading-content {
+				display: block;
+				[class*="col-"] {
+				    float: left;
+				    width: 100%;
+			        padding-bottom: 15px;
+				    display: block;
+
+				    &:last-child {
+			    	    padding-left: 15px;
+				    }
+				}
+			}
+
+			.button-blue { margin: 0 auto; }
+		}
+	}
+}
